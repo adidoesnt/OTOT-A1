@@ -1,0 +1,11 @@
+services:
+  server:
+    build:
+      context: ./app
+    ports:
+      - 8080:8080
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - 80:80
